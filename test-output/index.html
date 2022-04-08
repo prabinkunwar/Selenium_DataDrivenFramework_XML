@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-regression" class="navigator-link">
+              <span class="suite-name border-failed">regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-regression" class="navigator-link ">
+                    <span>C:\Users\Prasbin\Documents\Eclipse Projects\Techfios_Selenium\session9_XML\src\main\java\testData\regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-regression" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-regression" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-regression" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-regression" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-regression" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-regression" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-regression" class="hide-methods failed suite-regression"> (hide)</a> <!-- hide-methods failed suite-regression -->
+                      <a href="#" panel-name="suite-regression" class="show-methods failed suite-regression"> (show)</a> <!-- show-methods failed suite-regression -->
+                    </span>
+                    <div class="method-list-content failed suite-regression">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="test.AddCustomerTest" class="method navigator-link" hash-for-method="validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Prabin Kunwar, Techfios, prabin@techfios.com, 817563, Techfios Building, ...)">validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Prabin Kunwar, Techfios, prabin@techfios.com, 817563, Techfios Building, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-regression" class="panel regression">
+          <div class="suite-regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Prabin Kunwar, Techfios, prabin@techfios.com, 817563, Techfios Building, ...)">
+                  </a> <!-- validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Prabin Kunwar, Techfios, prabin@techfios.com, 817563, Techfios Building, ...) -->
+                  <span class="method-name">validUserShouldBeAbleToAddCustomerFromListCustomer</span>
+                  <span class="parameters">(demo@techfios.com, abc123, Prabin Kunwar, Techfios, prabin@techfios.com, 817563, Techfios Building, Carrolton, TX, 75009, United States)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRABIN&apos;, ip: &apos;172.20.9.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Prasbin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f0f425c3b3a364a76eacca0ba502359c
+*** Element info: {Using=xpath, value=//tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page.AddCustomerPage.verifyEnteredNameOnSearchAndProfile(AddCustomerPage.java:138)
+	at test.AddCustomerTest.validUserShouldBeAbleToAddCustomerFromListCustomer(AddCustomerTest.java:106)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-failed -->
+        </div> <!-- panel regression -->
+        <div panel-name="test-xml-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Prasbin\Documents\Eclipse Projects\Techfios_Selenium\session9_XML\src\main\java\testData\regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;regression&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;parameter name=&quot;Zip&quot; value=&quot;75009&quot;/&gt;
+    &lt;parameter name=&quot;CompanyName&quot; value=&quot;Techfios&quot;/&gt;
+    &lt;parameter name=&quot;UserName&quot; value=&quot;demo@techfios.com&quot;/&gt;
+    &lt;parameter name=&quot;Email&quot; value=&quot;prabin@techfios.com&quot;/&gt;
+    &lt;parameter name=&quot;Address&quot; value=&quot;Techfios Building&quot;/&gt;
+    &lt;parameter name=&quot;Phone&quot; value=&quot;817563&quot;/&gt;
+    &lt;parameter name=&quot;State&quot; value=&quot;TX&quot;/&gt;
+    &lt;parameter name=&quot;FullName&quot; value=&quot;Prabin Kunwar&quot;/&gt;
+    &lt;parameter name=&quot;Country&quot; value=&quot;United States&quot;/&gt;
+    &lt;parameter name=&quot;City&quot; value=&quot;Carrolton&quot;/&gt;
+    &lt;parameter name=&quot;Password&quot; value=&quot;abc123&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.AddCustomerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+&lt;/suite&gt; &lt;!-- regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_regression');
+function tableData_regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validUserShouldBeAbleToAddCustomerFromListCustomer')
+data.setCell(0, 2, 'test.AddCustomerTest')
+data.setCell(0, 3, 16602);
+window.suiteTableData['regression']= { tableData: data, tableDiv: 'times-div-regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-regression">
+              </div> <!-- times-div-regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Prabin Kunwar, Techfios, prabin@techfios.com, 817563, Techfios Building, ...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [smoke]">
+  <test thread-count="5" name="LoginTest(failed)">
+    <parameter name="UserName" value="demo@techfios.com"/>
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="validUserShouldBeAbleToLogin"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [smoke] -->
